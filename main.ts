@@ -1,4 +1,5 @@
-import { workers, workersPreset } from './data/data'
-import { getWorkersWithCategories } from './multi-element-filter-algorithm'
+import { workers, workersPreset } from './algolem/data'
+import { getWorkersWithCategoriesAndSubCategories } from './multi-element-filter-algorithm'
 
-console.table(getWorkersWithCategories(workers, workersPreset));
+//console.table(getWorkersWithCategories(workers, workersPreset));
+console.log(getWorkersWithCategoriesAndSubCategories(workers, workersPreset));
