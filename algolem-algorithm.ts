@@ -222,7 +222,6 @@ const fillWorkersInsideObjCategoriesWithSubCategoriesAndWorkers = (phCategoriesW
  * Start Algolem
  */
 export const getWorkersWithCategoriesAndSubCategories = (phWorkers : any, phWorkersPreset : any) => {
-	//let startTime = performance.now()
 	let rawCategories = getCategoriesFromWorkers(phWorkers);
 	let rawSubCategories = getSubCategoriesFromWorkers(phWorkers);
 	let cleanCategories = getCleanCategories(rawCategories);
@@ -235,7 +234,5 @@ export const getWorkersWithCategoriesAndSubCategories = (phWorkers : any, phWork
 	let cleanobj = cleanAllSubCategoryNamesFromDuplicateInsideCategories(categoriesWithSubCategoriesNames)
 	let categoriesWithSubCategoriesAndWorkers = createObjCategoriesWithSubCategoriesAndWorkers(cleanobj)
 	let finalObj = fillWorkersInsideObjCategoriesWithSubCategoriesAndWorkers(categoriesWithSubCategoriesAndWorkers, cleanobj, subCategoryWithWorkers)
-	//let endTime = performance.now()
-	//console.log(`Call to doSomething took ${endTime - startTime} milliseconds`)
 	return finalObj;
 }
