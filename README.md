@@ -9,4 +9,5 @@ Algolem is a series of algorithms that makes the same thing: Algolem takes two o
 Of course, this repo reppresent just an exercise in style 'cose you can achive same results in a better way using query SQL language.
 At the moment i've just implemented Algolem with a for loop series.
 
-Feel free to play with Algolem for better understand the for for loops strenght. 
+Feel free to play with Algolem to better understand the for loops strenght. 
+You can test Algolem with react here (https://github.com/EmanueleGurini/algolem).
